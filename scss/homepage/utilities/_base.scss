@@ -1,0 +1,32 @@
+//--------------------------------------
+//  Base Styles
+//--------------------------------------
+
+.page-container {
+  font-family: 'Cinzel';
+  font-weight: 500;
+  box-shadow: 0 0 0.4rem 0.1rem rgba(0,0,0,0.2);
+}
+
+button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 15px;
+  font-family: 'Cinzel';
+  font-weight: 800;
+  box-shadow: 0 0 0.2rem 0.05rem rgba(0,0,0,0.2);
+  color: $dark_gray;
+}
+
+button:hover {
+  background-color: $secondary_colour;
+  color: white;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+
+input {
+  font-family: 'Cinzel';
+  font-weight: 500;
+}

@@ -1,0 +1,85 @@
+//--------------------------------------
+//  Landing Zone on Home Page
+//--------------------------------------
+
+.landing-screen {
+  background-image: url(../img/double-exposure.jpg);
+  background-repeat: no-repeat;
+  background-position: 70%;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $dark_gray;
+}
+
+.mobile-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.mobile-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.b-line {
+  background-color: $dark_gray;
+  width: 23px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255,255,255, 0.6);
+  width: 100%;
+  height: 130px;
+  position: relative;
+  top: 30%;
+  padding: 10px 0;
+}
+
+.title-container h1 {
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  bottom: 3.3rem;
+}
+
+.title-container h4 {
+  position: relative;
+  font-weight: 500;
+}
+
+.im-dev {
+  bottom: 6rem;
+}
+
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  position: absolute;
+  top: 88%
+}
+
+.scroll-down h6 {
+  position: relative;
+  top: 15px;
+}
