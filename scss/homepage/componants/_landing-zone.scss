@@ -73,13 +73,16 @@
 .scroll-down {
   display: flex;
   flex-direction: column;
-  align-self: center;
   align-items: center;
-  position: absolute;
-  top: 88%
+  margin: auto 0 15px 0;
 }
 
 .scroll-down h6 {
   position: relative;
   top: 15px;
 }
+
+
+//--------------------------------------
+//  Media Queries
+//--------------------------------------

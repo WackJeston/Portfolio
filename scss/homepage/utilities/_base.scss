@@ -26,6 +26,10 @@ button:hover {
   box-shadow: 0 0 0 0 rgba(0,0,0,0);
 }
 
+button:active {
+  box-shadow: 0 0 0.4rem 0.1rem rgba(0,0,0,0.2);
+}
+
 input {
   font-family: 'Cinzel';
   font-weight: 500;
