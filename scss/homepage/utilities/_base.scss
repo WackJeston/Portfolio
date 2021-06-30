@@ -2,10 +2,18 @@
 //  Base Styles
 //--------------------------------------
 
-.page-container {
+
+body {
+  box-shadow: 0 0 0.4rem 0.1rem rgba(0,0,0,0.2);
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Cinzel';
   font-weight: 500;
-  box-shadow: 0 0 0.4rem 0.1rem rgba(0,0,0,0.2);
+}
+
+p, button {
+  font-family: 'Raleway', sans-serif;
 }
 
 button {
@@ -14,8 +22,7 @@ button {
   border-radius: 5px;
   height: 40px;
   padding: 0 15px;
-  font-family: 'Cinzel';
-  font-weight: 800;
+  font-weight: 600;
   box-shadow: 0 0 0.2rem 0.05rem rgba(0,0,0,0.2);
   color: $dark_gray;
 }
@@ -33,4 +40,8 @@ button:active {
 input {
   font-family: 'Cinzel';
   font-weight: 500;
+}
+
+.logo {
+  font-weight: 800;
 }

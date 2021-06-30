@@ -5,7 +5,7 @@
 .landing-screen {
   background-image: url(../img/double-exposure.jpg);
   background-repeat: no-repeat;
-  background-position: 70%;
+  background-position: center;
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -23,7 +23,7 @@
   width: 100%;
 }
 
-.logo {
+.landing-screen .logo {
   margin-left: 20px;
 }
 
@@ -46,28 +46,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255,255,255, 0.6);
+  background-color: rgba(255,255,255, 0.7);
   width: 100%;
-  height: 130px;
   position: relative;
-  top: 30%;
+  top: 25%;
   padding: 10px 0;
+  line-height: 0;
 }
 
 .title-container h1 {
   font-size: 40px;
   font-weight: 500;
-  position: relative;
-  bottom: 3.3rem;
 }
 
 .title-container h4 {
-  position: relative;
   font-weight: 500;
-}
-
-.im-dev {
-  bottom: 6rem;
 }
 
 .scroll-down {
@@ -80,9 +73,32 @@
 .scroll-down h6 {
   position: relative;
   top: 15px;
+  font-weight: 800;
 }
 
 
 //--------------------------------------
 //  Media Queries
 //--------------------------------------
+
+
+@media (min-width:992px) {
+
+  .landing-screen {
+    // background-position: 10%;
+  }
+
+  .landing-screen .logo,
+  .mobile-burger {
+    display: none;
+  }
+
+  .title-container h1 {
+    font-size: 50px;
+  }
+
+  .title-container {
+    top: 30%;
+    background-color: rgba(255,255,255, 0);
+  }
+}

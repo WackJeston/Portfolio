@@ -1,0 +1,76 @@
+//--------------------------------------
+//  Desktop Header
+//--------------------------------------
+
+
+.desktop-header {
+  background-image: url(../img/header-background.jpg);
+  position: fixed;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid $dark_gray;
+  font-family: 'Cinzel';
+  font-weight: 500;
+  color: $dark_gray;
+}
+
+.desktop-header .logo {
+  padding: 40px 45px;
+  font-size: 50px;
+  line-height: 0;
+}
+
+.header-line {
+  width: 100%;
+  border-bottom: 2px solid $dark_gray;
+  margin-bottom: 50px;
+}
+
+.desktop-header button {
+  background-color: rgba(255,255,255, 0);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  font-size: 13px;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: $secondary_colour;
+}
+
+.desktop-header button:active {
+  border: 2px solid white;
+}
+
+.desktop-header button:focus {
+  text-decoration: underline;
+}
+
+.socials i {
+  margin: 10px 5px;
+}
+
+.socials i:hover {
+  color: $secondary_colour;
+}
+
+
+//--------------------------------------
+//  Media Queries
+//--------------------------------------
+
+
+@media (min-width:992px) {
+  .desktop-header {
+    display: flex;
+  }
+
+  .page-container {
+    margin-left: 163px;
+  }
+}
