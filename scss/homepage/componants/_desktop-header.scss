@@ -3,11 +3,13 @@
 //--------------------------------------
 
 
+
 .desktop-header {
   background-image: url(../img/header-background.jpg);
-  position: fixed;
-  height: 100%;
   display: none;
+  height: 100%;
+  width: 165px;
+  position: fixed;
   flex-direction: column;
   align-items: center;
   border: 2px solid $dark_gray;
@@ -25,7 +27,7 @@
 .header-line {
   width: 100%;
   border-bottom: 2px solid $dark_gray;
-  margin-bottom: 50px;
+  margin-bottom: auto;
 }
 
 .desktop-header button {
@@ -35,20 +37,26 @@
   box-shadow: none;
   width: 100%;
   font-size: 13px;
-  margin: 5px 0;
+  margin: 10px 0;
   text-transform: uppercase;
 }
 
-button:hover {
+.desktop-header button:hover {
   background-color: $secondary_colour;
+  border: 1px solid $primary_colour;
 }
 
 .desktop-header button:active {
-  border: 2px solid white;
+  border: 2px solid $secondary_colour;
 }
 
 .desktop-header button:focus {
   text-decoration: underline;
+}
+
+.socials {
+  margin-top: auto;
+  margin-bottom: 25px;
 }
 
 .socials i {
@@ -71,6 +79,6 @@ button:hover {
   }
 
   .page-container {
-    margin-left: 163px;
+    margin-left: 165px;
   }
 }

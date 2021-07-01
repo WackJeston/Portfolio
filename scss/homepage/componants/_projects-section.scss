@@ -45,7 +45,7 @@
   margin-left: 20px;
 }
 
-.project-container button {
+.pro-content button {
   margin-right: 20px;
 }
 
@@ -57,4 +57,40 @@
   height: 1px;
   width: 100%;
   background: linear-gradient(to right, $dark_gray_trans, $dark_gray, $dark_gray_trans);
+}
+
+
+
+//--------------------------------------
+//  Media Queries
+//--------------------------------------
+
+
+@media (min-width:576px)
+and (max-width:768px) {
+  .project-container {
+    width: 500px;
+  }
+}
+
+@media (min-width:768px)
+and (max-width:992px) {
+  .project-container {
+    width: 325px;
+  }
+
+  .pro-content h3 {
+    font-size: 20px;
+    bottom: 0;
+  }
+
+  .project-line {
+    margin-top: 7px;
+  }
+}
+
+@media (min-width:992px) {
+  .project-container {
+    width: 350px;
+  }
 }
