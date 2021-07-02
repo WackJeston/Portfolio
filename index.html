@@ -1,9 +1,15 @@
+<!-- Homepage -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
   <head>
-    <title>Jack Weston Portfolio</title>
+    <title>Home | Jack Weston</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon ------------------------------------>
+    <link rel="shortcut icon" type="image/png" href="img/JW-favicon.png">
 
     <!-- Font Awsome ------------------------------------>
     <script src="https://kit.fontawesome.com/c8712841cc.js" crossorigin="anonymous"></script>
@@ -20,33 +26,33 @@
   <body>
     <!-- Desktop Side Header ------------------------------------>
     <div class="desktop-header">
-      <h2 class="logo">JW</h2>
+      <a href="#" class="logo">JW</a>
       <div class="header-line"></div>
 
-      <div>
-        <button type="button" name="about-me">About Me</button>
-        <button type="button" name="my-portfolio">My Portfolio</button>
-        <button type="button" name="coding-examples">Coding Examples</button>
-        <button type="button" name="scs-scheme">SCS Scheme</button>
-        <button type="button" name="contact-me">Contact Me</button>
+      <div class="link-list-desktop">
+        <a href="#">About Me</a>
+        <a href="#">My Portfolio</a>
+        <a href="#">Coding Examples</a>
+        <a href="#">SCS Scheme</a>
+        <a href="#contact">Contact Me</a>
       </div>
 
       <div class="socials">
-        <i class="fab fa-instagram fa-lg"></i>
-        <i class="fab fa-linkedin-in fa-lg"></i>
+        <a href="https://www.instagram.com/jackwestoninc/"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/jack-weston-388750174/"><i class="fab fa-linkedin-in fa-lg"></i></a>
       </div>
     </div>
 
 
-    <!-- Mobile Pop Up Header ------------------------------------>
+    <!-- Mobile Pop Up Menu ------------------------------------>
     <div class="mobile-pop-up-menu">
       <div class="box-arrow"></div>
-      <div class="link-list">
-        <button type="button" name="about-me">About Me</button>
-        <button type="button" name="my-portfolio">My Portfolio</button>
-        <button type="button" name="coding-examples">Coding Examples</button>
-        <button type="button" name="scs-scheme">SCS Scheme</button>
-        <button type="button" name="contact-me">Contact Me</button>
+      <div class="link-list-mobile">
+        <a href="#">About Me</a>
+        <a href="#">My Portfolio</a>
+        <a href="#">Coding Examples</a>
+        <a href="#">SCS Scheme</a>
+        <a href="#contact">Contact Me</a>
       </div>
 
       <div class="socials">
@@ -55,19 +61,22 @@
       </div>
     </div>
 
+    <!-- Mobile Header ------------------------------------>
+    <div class="mobile-header">
+      <a href="#" class="logo">JW</a>
+
+      <div class="mobile-burger">
+        <div class="b-line b-1"></div>
+        <div class="b-line b-2"></div>
+        <div class="b-line b-2"></div>
+      </div>
+    </div>
+
+    <!-- PAGE CONTAINER ------------------------------------>
     <div class="page-container">
+
       <!-- Landing Screen ------------------------------------>
-      <div class="landing-screen">
-        <div class="mobile-header">
-          <h2 class="logo">JW</h2>
-
-          <div class="mobile-burger">
-            <div class="b-line b-1"></div>
-            <div class="b-line b-2"></div>
-            <div class="b-line b-2"></div>
-          </div>
-        </div>
-
+      <div id="top" class="landing-screen">
         <div class="title-container">
           <h4 class="my-name-is">My Name is</h4>
           <h1>JACK WESTON</h1>
@@ -75,13 +84,13 @@
         </div>
 
         <div class="scroll-down">
-          <h6>Scroll Down</h6>
-          <i class="fas fa-angle-down"></i>
+          <a href="#projects">Scroll Down</a>
+          <i class="fas fa-chevron-down" style="font-size: 12px;"></i>
         </div>
       </div>
 
       <!-- Projects Section ------------------------------------>
-      <div class="project-section">
+      <div class="project-section" id="projects">
         <div class="project-container">
           <img src="img/project-1.jpg" alt="project 1">
           <div class="pro-content">
@@ -103,7 +112,7 @@
 
 
       <!-- Get In Touch Section ------------------------------------>
-      <div class="get-in-touch-section">
+      <div class="get-in-touch-section" id="contact">
         <div class="git-info">
           <h3>Get In Touch</h3>
           <p>Want to get in touch? I'd love to hear from you. Here's how you can reach me...</p>
@@ -127,8 +136,8 @@
       <!-- Footer ------------------------------------>
       <footer>
         <div class="back-top">
-          <i class="fas fa-angle-up"></i>
-          <h6>Back To Top</h6>
+          <i class="fas fa-chevron-up" style="font-size: 12px;"></i>
+          <a href="#top">Back To Top</a>
         </div>
       </footer>
 

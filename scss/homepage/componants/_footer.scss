@@ -2,17 +2,29 @@
 //  Footer
 //--------------------------------------
 
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .back-top {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0;
+  width: 100px;
 }
 
-.back-top h6 {
-  font-weight: 800;
-}
-
+.back-top a,
 .back-top i {
-  position: relative;
-  top: 20px;
+  color: $dark_gray;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.back-top:hover a,
+.back-top:hover i {
+  color: $primary_colour;
 }

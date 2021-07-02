@@ -1,0 +1,45 @@
+//--------------------------------------
+//  Mobile Header
+//--------------------------------------
+
+.mobile-header {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.mobile-header .logo {
+  margin-left: 22px;
+}
+
+.mobile-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  margin-right: 22px;
+}
+
+.b-line {
+  background-color: $dark_gray;
+  width: 23px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+
+
+//--------------------------------------
+//  Media Queries
+//--------------------------------------
+
+
+@media (min-width:992px) {
+  .mobile-header {
+    display: none;
+  }
+}

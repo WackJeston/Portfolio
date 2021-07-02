@@ -15,33 +15,6 @@
   color: $dark_gray;
 }
 
-.mobile-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.landing-screen .logo {
-  margin-left: 20px;
-}
-
-.mobile-burger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 20px;
-  margin-right: 20px;
-}
-
-.b-line {
-  background-color: $dark_gray;
-  width: 23px;
-  height: 4px;
-  border-radius: 2px;
-}
-
 .title-container {
   display: flex;
   flex-direction: column;
@@ -70,11 +43,20 @@
   margin: auto 0 15px 0;
 }
 
-.scroll-down h6 {
-  position: relative;
-  top: 15px;
-  font-weight: 800;
+.scroll-down a,
+.scroll-down i  {
+  color: $dark_gray;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 15px;
 }
+
+.scroll-down:hover a,
+.scroll-down:hover i  {
+  color: white;
+}
+
+
 
 
 //--------------------------------------
@@ -86,11 +68,6 @@
 
   .landing-screen {
     background-position: 30%;
-  }
-
-  .landing-screen .logo,
-  .mobile-burger {
-    display: none;
   }
 
   .title-container h1 {
