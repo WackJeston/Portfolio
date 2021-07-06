@@ -1,0 +1,95 @@
+//--------------------------------------
+//  About-Me Page Main File
+//--------------------------------------
+
+
+
+.page-container {
+  padding-top: 1px;
+}
+
+.scs-main {
+  margin: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scs-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.scs-content p {
+  max-width: 100%;
+  text-align: center;
+}
+
+.scs-content h2 {
+  text-align: center;
+}
+
+.top-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.first-p {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-m-1 {
+  display: none;
+  margin-bottom: 30px;
+  position: relative;
+  top: 20px;
+  border-radius: 5px;
+  min-width: 250px;
+  height: 250px;
+}
+
+.logo-m-2 {
+  width: 80vw;
+  max-width: 500px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+
+
+//--------------------------------------
+//  Media Queries
+//--------------------------------------
+
+
+@media (min-width:768px) {
+
+  .scs-content {
+    max-width: 900px;
+  }
+
+  .first-p p {
+    text-align: left;
+  }
+
+  .logo-m-1 {
+    display: flex;
+  }
+
+  .logo-m-2 {
+    display: none;
+  }
+
+  .first-p {
+    margin-right: 40px;
+  }
+
+  .scs .last-p {
+    max-width: 600px;
+  }
+}

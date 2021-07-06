@@ -3,7 +3,7 @@
 //--------------------------------------
 
 .landing-screen {
-  background-image: url(../img/double-exposure.jpg);
+  background-image: url(../img/old-DE.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,16 +13,16 @@
   flex-direction: column;
   align-items: center;
   color: $dark_gray;
+  margin-bottom: 20px;
 }
 
 .title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255,255,255, 0.7);
   width: 100%;
   position: relative;
-  top: 25%;
+  top: 10%;
   padding: 10px 0;
   line-height: 0;
 }
@@ -45,7 +45,7 @@
 
 .scroll-down a,
 .scroll-down i  {
-  color: $dark_gray;
+  color: $primary_colour;
   text-decoration: none;
   margin-bottom: 10px;
   font-size: 15px;
@@ -66,16 +66,12 @@
 
 @media (min-width:992px) {
 
-  .landing-screen {
-    background-position: 30%;
-  }
-
   .title-container h1 {
     font-size: 50px;
   }
 
   .title-container {
-    top: 30%;
+    top: 8%;
     background-color: rgba(255,255,255, 0);
   }
 }
