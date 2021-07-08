@@ -1,0 +1,17 @@
+//--------------------------------------
+//  Coding Examples Main File
+//--------------------------------------
+
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1px;
+}
+
+h1 {
+  margin-top: 40vh;
+  font-size: 45px;
+  color: $dark_gray;
+}

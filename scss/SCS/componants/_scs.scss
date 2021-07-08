@@ -28,19 +28,16 @@
   background-color: $dark-gray;
   color: white;
   border-radius: 5px;
-  padding: 20px;
+  padding: 20px 0 30px 0;
 }
 
-p {
+.section-1 p, .section-1 h2 {
+  margin: 10px 0;
+  width: 80%;
+}
+
+.section-2 p, .section-3 p {
   width: 100%;
-}
-
-h2 {
-  text-overflow: ellipsis;
-}
-
-.section-1 h2 {
-  margin: 0;
 }
 
 .section-2 h2, .section-3 h2 {
@@ -50,6 +47,7 @@ h2 {
 img {
   width: 100%;
   min-width: 50px;
+  min-height: 50px;
   max-width: 800px;
   margin-top: 30px;
   border-radius: 5px;
@@ -70,13 +68,17 @@ img {
     justify-content: space-around;
   }
 
-  .section-1 {
-    width: 100%;
-
+  .section-1 p, .section-1 h2 {
+    width: 85%;
   }
 
-  .section-2, .section-3 {
-    width: 40%;
+  .section-2 {
+    width: 35%;
+    margin: 0px 10px;
+  }
+
+  .section-3 {
+    width: 45%;
     margin: 0px 10px;
   }
 }
@@ -85,5 +87,9 @@ img {
 
   .scs-main {
     margin-top: 50px;
+  }
+
+  .section-1 p, .section-1 h2 {
+    width: 90%;
   }
 }
