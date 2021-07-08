@@ -8,7 +8,7 @@
 }
 
 .about-me-main {
-  margin: 80px 60px;
+  margin: 80px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,8 +49,10 @@
 }
 
 .logo-m-2 {
-  width: 80vw;
+  width: 100%;
   max-width: 500px;
+  min-width: 50px;
+  min-height: 50px;
   margin-top: 20px;
   border-radius: 5px;
 }
