@@ -3,10 +3,12 @@ new TypeIt("#typing", {
   waitUntilVisible: true,
   loop: true,
   startDelay: 500
-})
-  .type("I'm a Web Developer!", {delay: 500})
-  .delete(1)
-  .type(", in training...", {delay: 2000})
-  .delete(35, {delay: 300})
-  .type("What's for lunch?", {delay: 1000})
-  .go();
+}).type("I'm a Web Developer!", {
+  delay: 500
+}).delete(1).type(", in training...", {
+  delay: 2000
+}).delete(35, {
+  delay: 300
+}).type("What's for lunch?", {
+  delay: 1000
+}).go();
