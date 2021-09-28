@@ -3,10 +3,6 @@
 //--------------------------------------
 
 
-.page-container {
-  padding-top: 1px;
-}
-
 .about-me-main {
   margin: 80px 20px;
   display: flex;
@@ -14,7 +10,7 @@
   align-items: center;
 }
 
-.about-me-content {
+.about-me-main .about-me-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,24 +18,24 @@
   margin-bottom: 40px;
 }
 
-.about-me-content p {
+.about-me-main .about-me-content p {
   max-width: 100%;
   text-align: center;
 }
 
-.top-row {
+.about-me-main .top-row {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.first-p {
+.about-me-main .first-p {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.logo-m-1 {
+.about-me-main .logo-m-1 {
   display: none;
   margin-bottom: 30px;
   position: relative;
@@ -49,7 +45,7 @@
   height: 250px;
 }
 
-.logo-m-2 {
+.about-me-main .logo-m-2 {
   width: 100%;
   max-width: 500px;
   min-width: 50px;
@@ -67,27 +63,27 @@
 
 @media (min-width:768px) {
 
-  .about-me-content {
+  .about-me-main .about-me-content {
     max-width: 900px;
   }
 
-  .first-p p {
+  .about-me-main .first-p p {
     text-align: left;
   }
 
-  .logo-m-1 {
+  .about-me-main .logo-m-1 {
     display: flex;
   }
 
-  .logo-m-2 {
+  .about-me-main .logo-m-2 {
     display: none;
   }
 
-  .first-p {
+  .about-me-main .first-p {
     margin-right: 40px;
   }
 
-  .about-me-content .last-p {
+  .about-me-main .about-me-content .last-p {
     max-width: 600px;
   }
 }

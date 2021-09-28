@@ -4,9 +4,9 @@
 
 
 
-.page-container {
-  padding-top: 1px;
-}
+// .page-container {
+//   padding-top: 1px;
+// }
 
 .scs-main {
   margin: 90px 20px;
@@ -15,7 +15,7 @@
   align-items: center;
 }
 
-.content-container {
+.scs-main .content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,27 +24,27 @@
   width: 100%;
 }
 
-.section-1 {
+.scs-main .section-1 {
   background-color: $dark-gray;
   color: white;
   border-radius: 5px;
   padding: 20px 0 30px 0;
 }
 
-.section-1 p, .section-1 h2 {
+.scs-main .section-1 p, .scs-main .section-1 h2 {
   margin: 10px 0;
   width: 80%;
 }
 
-.section-2 p, .section-3 p {
+.scs-main .section-2 p, .scs-main .section-3 p {
   width: 100%;
 }
 
-.section-2 h2, .section-3 h2 {
+.scs-main .section-2 h2, .scs-main .section-3 h2 {
   margin: 30px 0 0 0;
 }
 
-img {
+.scs-main img {
   width: 100%;
   min-width: 50px;
   min-height: 50px;
@@ -68,16 +68,16 @@ img {
     justify-content: space-around;
   }
 
-  .section-1 p, .section-1 h2 {
+  .scs-main .section-1 p, .scs-main .section-1 h2 {
     width: 85%;
   }
 
-  .section-2 {
+  .scs-main .section-2 {
     width: 35%;
     margin: 0px 10px;
   }
 
-  .section-3 {
+  .scs-main .section-3 {
     width: 45%;
     margin: 0px 10px;
   }
@@ -89,7 +89,7 @@ img {
     margin-top: 50px;
   }
 
-  .section-1 p, .section-1 h2 {
+  .scs-main .section-1 p, .scs-main .section-1 h2 {
     width: 90%;
   }
 }

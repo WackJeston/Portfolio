@@ -11,37 +11,37 @@
   padding: 40px 20px;
 }
 
-.git-info {
+.get-in-touch-section .git-info {
   margin-bottom: 20px;
 }
 
-.git-info h3 {
+.get-in-touch-section .git-info h3 {
   font-size: 18px;
   font-weight: 500;
   margin: 25px 0 0 20px;
 }
 
-.phone-num {
+.get-in-touch-section .phone-num {
   position: relative;
   line-height: 0;
   top: 5px;
 }
 
-.git-info p {
+.get-in-touch-section .git-info p {
   color: white;
   font-size: 15px;
   font-weight: 300;
   padding: 0 30px;
 }
 
-.git-form {
+.get-in-touch-section .git-form {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
 
-.git-form input,
-.git-form textarea {
+.get-in-touch-section .git-form input,
+.get-in-touch-section .git-form textarea {
   margin-bottom: 10px;
   padding: 0 0 0 10px;
   flex-grow: 1;
@@ -50,28 +50,28 @@
   border-radius: 5px;
 }
 
-.names {
+.get-in-touch-section .names {
   display: flex;
   flex-direction: row;
 }
 
-.first-name {
+.get-in-touch-section .first-name {
   min-width: 50px;
   margin-right: 5px;
 }
 
-.last-name {
+.get-in-touch-section .last-name {
   min-width: 50px;
   margin-left: 5px;
 }
 
-.git-form textarea {
+.get-in-touch-section .git-form textarea {
   height: 100px;
   padding: 5px 8px;
   font-size: 14px;
 }
 
-.submit {
+.get-in-touch-section .submit {
   margin: 20px 30px 20px 30px;
   flex-grow: 1;
   background-color: $primary_colour;
@@ -79,15 +79,14 @@
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
 }
 
-.submit:hover {
+.get-in-touch-section .submit:hover {
+  background-color: $secondary_colour;
   border: 1px solid $primary_colour;
   color: $primary_colour;
 }
 
-.submit:active {
-  color: white;
-  border: 1px solid white;
-  box-shadow: 0 0 0.4rem 0.1rem rgba(255,255,255,0.2);
+.get-in-touch-section .submit:active {
+  border: 1px solid $secondary_colour;
 }
 
 
@@ -103,12 +102,12 @@
     justify-content: center;
   }
 
-  .git-info {
+  .get-in-touch-section .git-info {
     max-width: 500px;
     margin-right: 30px;
   }
 
-  .git-form {
+  .get-in-touch-section .git-form {
     max-width: 400px;
     margin-right: 20px;
   }

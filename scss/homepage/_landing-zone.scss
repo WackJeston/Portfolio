@@ -15,7 +15,7 @@
   color: $dark_gray;
 }
 
-.title-container {
+.landing-screen .title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,28 +23,28 @@
   padding: 10px 0;
 }
 
-.title-container h1 {
+.landing-screen .title-container h1 {
   font-size: 40px;
   font-weight: 500;
 }
 
-.title-container h4 {
+.landing-screen .title-container h4 {
   display: flex;
   font-size: 19px;
   font-weight: 500;
 }
 
-.my-name-is {
+.landing-screen .my-name-is {
   position: relative;
   top: 50px;
 }
 
-.im-dev {
+.landing-screen .im-dev {
   position: relative;
   bottom: 50px;
 }
 
-.scroll-down {
+.landing-screen .scroll-down {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,30 +53,30 @@
   top: 15px;
 }
 
-.scroll-down a {
+.landing-screen .scroll-down a {
   padding: 7px 10px 25px 10px;
   border-radius: 5px;
 }
 
-.scroll-down:hover a {
+.landing-screen .scroll-down:hover a {
   background-color: $primary_colour;
 }
 
-.scroll-down i {
+.landing-screen .scroll-down i {
   position: relative;
   bottom: 30px;
 }
 
-.scroll-down a,
-.scroll-down i  {
+.landing-screen .scroll-down a,
+.landing-screen .scroll-down i  {
   color: $primary_colour;
   text-decoration: none;
   margin-bottom: 10px;
   font-size: 16px;
 }
 
-.scroll-down:hover a,
-.scroll-down:hover i  {
+.landing-screen .scroll-down:hover a,
+.landing-screen .scroll-down:hover i  {
   color: $secondary_colour;
 }
 
@@ -90,11 +90,11 @@
 
 @media (min-width:992px) {
 
-  .title-container h1 {
+  .landing-screen .title-container h1 {
     font-size: 50px;
   }
 
-  .title-container {
+  .landing-screen .title-container {
     top: 8%;
     background-color: rgba(255,255,255, 0);
   }
