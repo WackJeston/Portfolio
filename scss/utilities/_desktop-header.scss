@@ -73,7 +73,7 @@
 
 .socials i {
   margin: 5px 5px;
-  padding: 6px 5px;
+  padding: 7px 5px 6px 5px;
   border-radius: 5px;
   color: $dark_gray;
 }
@@ -81,6 +81,10 @@
 .socials i:hover {
   color: $primary_colour;
   background-color: $secondary_colour;
+}
+
+.socials .fa-linkedin-in {
+  padding-top: 8px;
 }
 
 

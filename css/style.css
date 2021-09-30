@@ -258,7 +258,7 @@ input, textarea {
 
 .socials i {
   margin: 5px 5px;
-  padding: 6px 5px;
+  padding: 7px 5px 6px 5px;
   border-radius: 5px;
   color: #35382d;
 }
@@ -266,6 +266,10 @@ input, textarea {
 .socials i:hover {
   color: #f1eedb;
   background-color: #264229;
+}
+
+.socials .fa-linkedin-in {
+  padding-top: 8px;
 }
 
 @media (min-width: 992px) {
