@@ -3,10 +3,6 @@ body {
   background-color: #f1eedb;
 }
 
-.page-container {
-  padding-top: 1px;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cinzel";
   font-weight: 500;
@@ -58,7 +54,9 @@ input, textarea {
 }
 
 .mobile-pop-up-menu {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -178,7 +176,7 @@ input, textarea {
 .desktop-header {
   background-color: #f1eedb;
   display: none;
-  height: 100vh;
+  height: 100%;
   width: 165px;
   position: fixed;
   -webkit-box-orient: vertical;
@@ -368,7 +366,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 90%;
   padding: 10px 0;
 }
 

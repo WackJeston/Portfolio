@@ -1,21 +1,20 @@
 //--------------------------------------
 //  Desktop Header
 //--------------------------------------
-
-
+@use "utilities/variables";
 
 .desktop-header {
-  background-color: $primary_colour;
+  background-color: variables.$primary_colour;
   display: none;
-  height: 100vh;
+  height: 100%;
   width: 165px;
   position: fixed;
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid $dark_gray;
+  border-right: 1px solid variables.$dark_gray;
   font-family: 'Cinzel';
   font-weight: 500;
-  color: $dark_gray;
+  color: variables.$dark_gray;
 }
 
 .desktop-header .logo {
@@ -26,7 +25,7 @@
 
 .header-line {
   width: 100%;
-  border-bottom: 1px solid $dark_gray;
+  border-bottom: 1px solid variables.$dark_gray;
   margin-bottom: auto;
 }
 
@@ -39,7 +38,7 @@
 
 .link-list-desktop a {
   background-color: rgba(255,255,255, 0);
-  border: 1px solid $primary_colour;
+  border: 1px solid variables.$primary_colour;
   border-radius: 0;
   box-shadow: none;
   width: 161px;
@@ -50,16 +49,16 @@
   text-decoration: none;
   text-align: center;
   font-weight: 600;
-  color: $dark_gray
+  color: variables.$dark_gray
 }
 
 .link-list-desktop a:hover {
-  background-color: $secondary_colour;
-  color: $primary_colour;
+  background-color: variables.$secondary_colour;
+  color: variables.$primary_colour;
 }
 
 .link-list-desktop a:active {
-  border: 1px solid $secondary_colour;
+  border: 1px solid variables.$secondary_colour;
 }
 
 .link-list-desktop a:focus {
@@ -75,12 +74,12 @@
   margin: 5px 5px;
   padding: 7px 5px 6px 5px;
   border-radius: 5px;
-  color: $dark_gray;
+  color: variables.$dark_gray;
 }
 
 .socials i:hover {
-  color: $primary_colour;
-  background-color: $secondary_colour;
+  color: variables.$primary_colour;
+  background-color: variables.$secondary_colour;
 }
 
 .socials .fa-linkedin-in {

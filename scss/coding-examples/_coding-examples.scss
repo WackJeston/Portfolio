@@ -1,7 +1,7 @@
 //--------------------------------------
 //  Coding Examples Main File
 //--------------------------------------
-
+@use "utilities/variables";
 
 .coding-exampels {
   display: flex;
@@ -13,5 +13,5 @@
 .coding-exampels h1 {
   margin-top: 40vh;
   font-size: 45px;
-  color: $dark_gray;
+  color: variables.$dark_gray;
 }

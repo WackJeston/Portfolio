@@ -1,8 +1,7 @@
 //--------------------------------------
 //  About-Me Page Main File
 //--------------------------------------
-
-
+@use "utilities/variables";
 
 // .page-container {
 //   padding-top: 1px;
@@ -25,7 +24,7 @@
 }
 
 .scs-main .section-1 {
-  background-color: $dark-gray;
+  background-color: variables.$dark-gray;
   color: white;
   border-radius: 5px;
   padding: 20px 0 30px 0;

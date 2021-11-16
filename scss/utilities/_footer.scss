@@ -1,7 +1,7 @@
 //--------------------------------------
 //  Footer
 //--------------------------------------
-
+@use "utilities/variables";
 
 footer {
   display: flex;
@@ -23,7 +23,7 @@ footer {
 }
 
 .back-top:hover a {
-  background-color: $secondary_colour;
+  background-color: variables.$secondary_colour;
 }
 
 .back-top i {
@@ -33,7 +33,7 @@ footer {
 
 .back-top a,
 .back-top i  {
-  color: $secondary_colour;
+  color: variables.$secondary_colour;
   text-decoration: none;
   margin-bottom: 10px;
   font-size: 16px;
@@ -41,5 +41,5 @@ footer {
 
 .back-top:hover a,
 .back-top:hover i  {
-  color: $primary_colour;
+  color: variables.$primary_colour;
 }

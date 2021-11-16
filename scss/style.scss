@@ -4,26 +4,26 @@
 
 
 //--- Whole-site utilities -------------------------
-@import "utilities/variables";
-@import "utilities/base";
+@use "utilities/variables";
+@use "utilities/base";
 
 //--- Whole-site Componants ------------------------
-@import "utilities/mobile-menu";
-@import "utilities/mobile-header";
-@import "utilities/desktop-header";
-@import "utilities/footer";
+@use "utilities/mobile-menu";
+@use "utilities/mobile-header";
+@use "utilities/desktop-header";
+@use "utilities/footer";
 
 //--- Homepage Componants ------------------------
-@import "homepage/landing-zone";
-@import "homepage/projects-section";
-@import "homepage/get-in-touch";
+@use "homepage/landing-zone";
+@use "homepage/projects-section";
+@use "homepage/get-in-touch";
 
 //--- Coding Examples Componants ------------------------
-@import "coding-examples/coding-examples";
+@use "coding-examples/coding-examples";
 
 //--- About Me Componants ------------------------
-@import "about-me/about-me";
-@import "about-me/past-work";
+@use "about-me/about-me";
+@use "about-me/past-work";
 
 //--- SCS Componants ------------------------
-@import "scs/scs";
+@use "scs/scs";

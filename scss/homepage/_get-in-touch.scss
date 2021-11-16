@@ -1,13 +1,14 @@
 //--------------------------------------
 //  Get in Touch Section
 //--------------------------------------
+@use "utilities/variables";
 
 .get-in-touch-section {
   display: flex;
   flex-direction: column;
   padding-left: 50px;
-  background-color: $dark_gray;
-  color: $primary_colour;
+  background-color: variables.$dark_gray;
+  color: variables.$primary_colour;
   padding: 40px 20px;
 }
 
@@ -74,19 +75,19 @@
 .get-in-touch-section .submit {
   margin: 20px 30px 20px 30px;
   flex-grow: 1;
-  background-color: $primary_colour;
+  background-color: variables.$primary_colour;
   border: 1px solid white;
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
 }
 
 .get-in-touch-section .submit:hover {
-  background-color: $secondary_colour;
-  border: 1px solid $primary_colour;
-  color: $primary_colour;
+  background-color: variables.$secondary_colour;
+  border: 1px solid variables.$primary_colour;
+  color: variables.$primary_colour;
 }
 
 .get-in-touch-section .submit:active {
-  border: 1px solid $secondary_colour;
+  border: 1px solid variables.$secondary_colour;
 }
 
 

@@ -1,13 +1,14 @@
 //--------------------------------------
 //  Projects Section Home Page
 //--------------------------------------
+@use "utilities/variables";
 
 .project-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  color: $dark_gray;
+  color: variables.$dark_gray;
   padding-bottom: 80px
 }
 
@@ -73,7 +74,7 @@
   margin-top: 7px;
   height: 1px;
   width: 100%;
-  background: linear-gradient(to right, $dark_gray_trans, $dark_gray, $dark_gray_trans);
+  background: linear-gradient(to right, variables.$dark_gray_trans, variables.$dark_gray, variables.$dark_gray_trans);
 }
 
 
