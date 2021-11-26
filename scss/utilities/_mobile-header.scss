@@ -22,12 +22,24 @@
   flex-direction: column;
   justify-content: space-between;
   height: 20px;
+  padding: 5px;
+  border-radius: 3px;
   margin-right: 22px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.mobile-burger:hover {
+  background-color: variables.$secondary_colour;
+}
+
+.mobile-burger:hover .b-line {
+  background-color: variables.$primary_colour;
 }
 
 .b-line {
   background-color: variables.$dark_gray;
-  width: 23px;
+  width: 24px;
   height: 4px;
   border-radius: 2px;
 }

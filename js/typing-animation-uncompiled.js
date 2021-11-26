@@ -8,5 +8,4 @@ new TypeIt("#typing", {
   .delete(1)
   .type(", in training...", {delay: 2000})
   .delete(35, {delay: 300})
-  .type("What's for lunch?", {delay: 1000})
   .go();

@@ -7,7 +7,7 @@
   background-color: variables.$primary_colour;
   display: none;
   height: 100%;
-  width: 165px;
+  width: 140px;
   position: fixed;
   flex-direction: column;
   align-items: center;
@@ -18,9 +18,8 @@
 }
 
 .desktop-header .logo {
-  padding: 55px 0;
+  padding: 38px 0;
   font-size: 50px;
-  line-height: 55px;
 }
 
 .header-line {
@@ -41,7 +40,7 @@
   border: 1px solid variables.$primary_colour;
   border-radius: 0;
   box-shadow: none;
-  width: 161px;
+  width: 136px;
   font-size: 15px;
   margin: 10px 0;
   padding: 10px 0;
@@ -71,7 +70,7 @@
 }
 
 .socials i {
-  margin: 5px 5px;
+  margin: 5px 2px;
   padding: 7px 5px 6px 5px;
   border-radius: 5px;
   color: variables.$dark_gray;
@@ -86,18 +85,20 @@
   padding-top: 8px;
 }
 
+.socials .fa-tree {
+  padding:7px 8px 6px 8px
+}
+
 
 //--------------------------------------
 //  Media Queries
 //--------------------------------------
-
-
 @media (min-width:992px) {
   .desktop-header {
     display: flex;
   }
 
   .page-container {
-    margin-left: 165px;
+    margin-left: 140px;
   }
 }

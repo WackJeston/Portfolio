@@ -4,13 +4,13 @@
 @use "utilities/variables";
 
 body {
-  margin: 0px;
+  margin: 0;
   background-color: variables.$primary_colour;
 }
 
-// .page-container {
-//   max-width: 100%;
-// }
+.page-container {
+  padding-top: 1px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cinzel';
@@ -30,9 +30,10 @@ button {
   font-weight: 600;
   box-shadow: 0 0 0.2rem 0.05rem rgba(0,0,0,0.2);
   color: variables.$dark_gray;
+  cursor: pointer;
 }
 
-button:hover {
+button:hover, .view-project:hover {
   background-color: variables.$secondary_colour;
   color: white;
   box-shadow: 0 0 0 0 rgba(0,0,0,0);

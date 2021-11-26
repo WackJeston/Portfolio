@@ -3,12 +3,8 @@
 //--------------------------------------
 @use "utilities/variables";
 
-// .page-container {
-//   padding-top: 1px;
-// }
 
 .scs-main {
-  margin: 90px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,20 +15,25 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0;
-  width: 100%;
+  padding: 20px;
 }
 
 .scs-main .section-1 {
-  background-color: variables.$dark-gray;
-  color: white;
+  width: 100%;
   border-radius: 5px;
   padding: 20px 0 30px 0;
+  background-color: variables.$dark_gray;
+  color: variables.$primary_colour;
 }
 
 .scs-main .section-1 p, .scs-main .section-1 h2 {
   margin: 10px 0;
   width: 80%;
+  max-width: 800px;
+}
+
+.scs-main .section-2, .scs-main .section-3 {
+margin: 0 20px;
 }
 
 .scs-main .section-2 p, .scs-main .section-3 p {
@@ -48,7 +49,7 @@
   min-width: 50px;
   min-height: 50px;
   max-width: 800px;
-  margin-top: 30px;
+  margin: 30px 0;
   border-radius: 5px;
 }
 
@@ -60,7 +61,6 @@
 
 
 @media (min-width:768px) {
-
   .scs-main {
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,23 +72,24 @@
   }
 
   .scs-main .section-2 {
-    width: 35%;
-    margin: 0px 10px;
+    max-width: 45%;
+    margin: 0 10px 0 20px;
   }
 
   .scs-main .section-3 {
-    width: 45%;
-    margin: 0px 10px;
+    max-width: 35%;
+    margin: 0 20px 0 10px;
+  }
+}
+
+@media (max-width:991px) {
+  .scs-main {
+  margin-top: 80px;
   }
 }
 
 @media (min-width:992px) {
-
   .scs-main {
     margin-top: 50px;
-  }
-
-  .scs-main .section-1 p, .scs-main .section-1 h2 {
-    width: 90%;
   }
 }

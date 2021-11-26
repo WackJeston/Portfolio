@@ -3,10 +3,11 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <title>About Me | Jack Weston</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 
     <!-- Favicon ------------------------------------>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -18,19 +19,36 @@
     <!-- Google Fonts ------------------------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <!-- Desktop Side Header ------------------------------------>
-    <div class="desktop-header">
+    <section class="desktop-header">
       <a href="index.html" class="logo">JW</a>
       <div class="header-line"></div>
 
       <div class="link-list-desktop">
+        <a href="about-me.html">About</a>
+        <a href="index.html#projects">Portfolio</a>
+        <a href="coding-examples.html">Coding</a>
+        <a href="scs.html">SCS</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/WackJeston" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://teamtreehouse.com/jackweston3" target="_blank"><i class="fas fa-tree"></i></a>
+        <a href="https://www.linkedin.com/in/jack-weston-388750174/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+      </div>
+    </section>
+
+
+    <!-- Mobile Pop Up Menu ------------------------------------>
+    <section class="mobile-pop-up-menu">
+      <div class="box-arrow"></div>
+      <div class="link-list-mobile">
         <a href="about-me.html">About Me</a>
         <a href="index.html#projects">My Portfolio</a>
         <a href="coding-examples.html">Coding Examples</a>
@@ -43,28 +61,10 @@
         <a href="https://teamtreehouse.com/jackweston3" target="_blank"><i class="fas fa-tree"></i></a>
         <a href="https://www.linkedin.com/in/jack-weston-388750174/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
       </div>
-    </div>
-
-
-    <!-- Mobile Pop Up Menu ------------------------------------>
-    <div class="mobile-pop-up-menu">
-      <div class="box-arrow"></div>
-      <div class="link-list-mobile">
-        <a href="about-me.html">About Me</a>
-        <a href="index.html#projects">My Portfolio</a>
-        <a href="coding-examples.html">Coding Examples</a>
-        <a href="scs.html">SCS</a>
-        <a href="index.html/#contact">Contact Me</a>
-      </div>
-
-      <div class="socials">
-        <i class="fab fa-instagram fa-lg"></i>
-        <i class="fab fa-linkedin-in fa-lg"></i>
-      </div>
-    </div>
+    </section>
 
     <!-- Mobile Header ------------------------------------>
-    <div class="mobile-header">
+    <section class="mobile-header">
       <a href="index.html" class="logo">JW</a>
 
       <div class="mobile-burger">
@@ -72,7 +72,7 @@
         <div class="b-line b-2"></div>
         <div class="b-line b-2"></div>
       </div>
-    </div>
+    </section>
 
     <!-- PAGE CONTAINER ------------------------------------>
     <div class="page-container">
@@ -115,6 +115,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/pop-up-menu.js"></script>
 
   </body>
 </html>

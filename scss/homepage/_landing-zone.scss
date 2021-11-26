@@ -29,20 +29,16 @@
   font-weight: 500;
 }
 
-.landing-screen .title-container h4 {
+.landing-screen .title-container h4, .landing-screen .im-dev {
   display: flex;
   font-size: 19px;
   font-weight: 500;
+  font-family: 'Cinzel';
 }
 
 .landing-screen .my-name-is {
   position: relative;
   top: 50px;
-}
-
-.landing-screen .im-dev {
-  position: relative;
-  bottom: 50px;
 }
 
 .landing-screen .scroll-down {

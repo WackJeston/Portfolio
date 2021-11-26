@@ -3,13 +3,22 @@
 //--------------------------------------
 @use "utilities/variables";
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: variables.$dark_gray;
+  transition: all 200ms ease-in-out;
+}
+
 .get-in-touch-section {
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
-  background-color: variables.$dark_gray;
   color: variables.$primary_colour;
-  padding: 40px 20px;
+  margin: 20px;
+  max-width: 90%;
 }
 
 .get-in-touch-section .git-info {
@@ -19,7 +28,7 @@
 .get-in-touch-section .git-info h3 {
   font-size: 18px;
   font-weight: 500;
-  margin: 25px 0 0 20px;
+  margin: 25px 0 0 0;
 }
 
 .get-in-touch-section .phone-num {
@@ -32,13 +41,13 @@
   color: white;
   font-size: 15px;
   font-weight: 300;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 .get-in-touch-section .git-form {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .get-in-touch-section .git-form input,
@@ -47,7 +56,7 @@
   padding: 0 0 0 10px;
   flex-grow: 1;
   height: 30px;
-  border: none;
+  border: 2px solid variables.$dark_gray;
   border-radius: 5px;
 }
 
@@ -73,11 +82,11 @@
 }
 
 .get-in-touch-section .submit {
-  margin: 20px 30px 20px 30px;
+  margin: 20px 30px;
   flex-grow: 1;
   background-color: variables.$primary_colour;
   border: 1px solid white;
-    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
 }
 
 .get-in-touch-section .submit:hover {
@@ -90,17 +99,62 @@
   border: 1px solid variables.$secondary_colour;
 }
 
+.get-in-touch-section .thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: variables.$primary_colour;
+  color: variables.$dark_gray;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  height: 150px;
+}
 
-//--------------------------------------
-//  Media Queries
-//--------------------------------------
+// Keyframes
+@keyframes form-exit {
+  0%{
+    transform: translate3d(0,0,0);
+  }
+  5%{
+    transform: translate3d(-2vh,0,0);
+  }
+  100%{
+    transform: translate3d(90vh,0,0);
+  }
+}
 
+@keyframes thank-you-enter {
+  0%{
+    transform: translate3d(90vh,0,0);
+  }
+  95%{
+    transform: translate3d(-3vh,0,0);
+  }
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
+
+
+
+// Media Queries
+@media (max-width:767px) {
+  .get-in-touch-section {
+    width: 450px;
+  }
+}
 
 @media (min-width:768px) {
   .get-in-touch-section {
     flex-direction: row;
     padding: 25px;
     justify-content: center;
+    align-items: center;
+    width: 650px;
   }
 
   .get-in-touch-section .git-info {
@@ -111,5 +165,18 @@
   .get-in-touch-section .git-form {
     max-width: 400px;
     margin-right: 20px;
+  }
+}
+
+@media (min-width:992px)
+and (max-width:1200px) {
+  .get-in-touch-section {
+    width: 720px;
+  }
+}
+
+@media (min-width:1200px) {
+  .get-in-touch-section {
+    width: 920px;
   }
 }

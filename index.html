@@ -5,7 +5,7 @@
   <head>
     <title>Home | Jack Weston</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 
     <!-- Favicon ------------------------------------>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -17,19 +17,36 @@
     <!-- Google Fonts ------------------------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <!-- Desktop Side Header ------------------------------------>
-    <div class="desktop-header">
+    <section class="desktop-header">
       <a href="index.html" class="logo">JW</a>
       <div class="header-line"></div>
 
       <div class="link-list-desktop">
+        <a href="about-me.html">About</a>
+        <a href="index.html#projects">Portfolio</a>
+        <a href="coding-examples.html">Coding</a>
+        <a href="scs.html">SCS</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/WackJeston" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://teamtreehouse.com/jackweston3" target="_blank"><i class="fas fa-tree"></i></a>
+        <a href="https://www.linkedin.com/in/jack-weston-388750174/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+      </div>
+    </section>
+
+
+    <!-- Mobile Pop Up Menu ------------------------------------>
+    <section class="mobile-pop-up-menu">
+      <div class="box-arrow"></div>
+      <div class="link-list-mobile">
         <a href="about-me.html">About Me</a>
         <a href="index.html#projects">My Portfolio</a>
         <a href="coding-examples.html">Coding Examples</a>
@@ -42,36 +59,18 @@
         <a href="https://teamtreehouse.com/jackweston3" target="_blank"><i class="fas fa-tree"></i></a>
         <a href="https://www.linkedin.com/in/jack-weston-388750174/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
       </div>
-    </div>
-
-
-    <!-- Mobile Pop Up Menu ------------------------------------>
-    <div class="mobile-pop-up-menu">
-      <div class="box-arrow"></div>
-      <div class="link-list-mobile">
-        <a href="about-me.html">About Me</a>
-        <a href="index.html#projects">My Portfolio</a>
-        <a href="coding-examples.html">Coding Examples</a>
-        <a href="scs.html">SCS</a>
-        <a href="index.html#contact">Contact Me</a>
-      </div>
-
-      <div class="socials">
-        <i class="fab fa-instagram fa-lg"></i>
-        <i class="fab fa-linkedin-in fa-lg"></i>
-      </div>
-    </div>
+    </section>
 
     <!-- Mobile Header ------------------------------------>
-    <div class="mobile-header">
-      <a href="#" class="logo">JW</a>
+    <section class="mobile-header">
+      <a href="index.html" class="logo">JW</a>
 
       <div class="mobile-burger">
         <div class="b-line b-1"></div>
         <div class="b-line b-2"></div>
         <div class="b-line b-2"></div>
       </div>
-    </div>
+    </section>
 
     <!-- PAGE CONTAINER ------------------------------------>
     <div class="page-container">
@@ -81,7 +80,7 @@
         <div class="title-container">
           <h4 class="my-name-is">My Name is</h4>
           <h1>JACK WESTON</h1>
-          <h4 class="im-dev" id="typing"></h4>
+          <div class="im-dev" id="typing"></div>
         </div>
 
         <div class="scroll-down">
@@ -93,44 +92,59 @@
       <!-- Projects Section ------------------------------------>
       <div class="project-section" id="projects">
         <div class="project-container">
-          <a href="netmatters/index.html" target="_blank"><img src="img/project-1.jpg" alt="project 1"></a>
+          <a href="netmatters" target="_blank"><img src="img/project-1.jpg" alt="project 1"></a>
           <div class="pro-content">
-            <h3>Netmatters Home Page</h3>
-            <a href="netmatters/index.html" target="_blank"><button type="button" name="view-project" class="view-project">View Project<i class="fas fa-arrow-right view-pro-arrow"></i></button></a>
+            <h3>Netmatters</h3>
+            <a href="netmatters" target="_blank" class="view-project">View Project<i class="fas fa-arrow-right view-pro-arrow"></i></a>
           </div>
-          <div class="project-line"></div>
+          <p class="description">This is a copy of the Netmatters homepage I built, using HTMl, CSS and JavaScript</p>
         </div>
 
         <div class="project-container">
-          <a href="pairs-project/index.html" target="_blank"><img src="img/project-2.jpg" alt="project 2"></a>
+          <a href="pairs-project" target="_blank"><img src="img/project-2.jpg" alt="project 2"></a>
           <div class="pro-content">
             <h3>Pairs Project</h3>
-            <a href="pairs-project/index.html" target="_blank"><button type="button" name="view-project" class="view-project">View Project<i class="fas fa-arrow-right view-pro-arrow"></i></button></a>
+            <a href="pairs-project" target="_blank" class="view-project">View Project<i class="fas fa-arrow-right view-pro-arrow"></i></a>
           </div>
-          <div class="project-line"></div>
+          <p class="description">We were placed in pairs and tasked with creating a working site from a static mockup.</p>
+        </div>
+
+        <div class="project-container pro-3">
+          <a href="js-arrays" target="_blank"><img src="img/project-3.jpg" alt="project 3"></a>
+          <div class="pro-content">
+            <h3>JS Arrays</h3>
+            <a href="js-arrays" target="_blank" class="view-project">View Project<i class="fas fa-arrow-right view-pro-arrow"></i></a>
+          </div>
+          <p class="description">This is a site I created to grab random images using an API and display them as a list.</p>
         </div>
       </div>
 
 
       <!-- Get In Touch Section ------------------------------------>
-      <div class="get-in-touch-section" id="contact">
-        <div class="git-info">
-          <h3>Get In Touch</h3>
-          <p>Want to get in touch? I'd love to hear from you. Here's how you can reach me...</p>
-          <h3 class="phone-num">07377548135</h3>
-          <h3>jack.weston@netmatters-scs.com</h3>
-          <p>If you have any work opportunities you'd like to share with me please feel free to use the form.</p>
-        </div>
-
-        <div class="git-form">
-          <div class="names">
-            <input type="text" name="first-name" placeholder="First Name*" class="first-name">
-            <input type="text" name="last-name" placeholder="Last Name*" class="last-name">
+      <div class="contact-container">
+        <div class="get-in-touch-section" id="contact">
+          <div class="git-info">
+            <h3>Get In Touch</h3>
+            <p>Want to get in touch? I'd love to hear from you. Here's how you can reach me...</p>
+            <h3 class="phone-num">07377548135</h3>
+            <h3>jack.weston@netmatters-scs.com</h3>
+            <p>If you have any work opportunities you'd like to share with me please feel free to use this form.</p>
           </div>
-          <input type="email" name="email" placeholder="Email Address*">
-          <input type="text" name="subject" placeholder="Subject">
-          <textarea name="message-box" placeholder="Message*" rows="8" cols="80"></textarea>
-          <button type="button" name="submit" class="submit">Submit</button>
+
+          <form class="git-form">
+            <div class="names">
+              <input type="text" name="first-name" placeholder="First Name*" class="first-name">
+              <input type="text" name="last-name" placeholder="Last Name*" class="last-name">
+            </div>
+            <input type="email" name="email" placeholder="Email Address*" class="email">
+            <input type="text" name="subject" placeholder="Subject*" class="subject">
+            <textarea name="message-box" placeholder="Message*" rows="8" cols="80" class="message"></textarea>
+            <input type="submit" name="submit" value="Submit" class="submit">
+          </form>
+
+          <div class="thank-you">
+            <h2>Thanks for your interest, I will be in contact soon!</h2>
+          </div>
         </div>
       </div>
 
@@ -146,6 +160,8 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.fill%2CIntersectionObserver%2CObject.assign%2CPromise%2CArray.from%2CArray.prototype.find%2CMath.sign"></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script src="js/typing-animation.js"></script>
-  </body>
+    <script src="js/pop-up-menu.js"></script>
+    <script src="js/form.js"></script>
 
+  </body>
 </html>

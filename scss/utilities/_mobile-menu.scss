@@ -4,7 +4,7 @@
 @use "utilities/variables";
 
 .mobile-pop-up-menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   position: absolute;
@@ -12,50 +12,98 @@
   top: 80px;
   z-index: 2;
   background-color: variables.$secondary_colour;
-  padding: 20px;
+  padding: 30px;
   border-radius: 5px;
 }
 
-.box-arrow {
-  width: 20px;
-  height: 20px;
+// animation: pop-up-menu 0.6s forwards;
+
+.mobile-pop-up-menu .box-arrow {
+  width: 24px;
+  height: 24px;
   transform: rotate(45deg);
   background-color: variables.$secondary_colour;
   position: absolute;
   top: -10px;
-  right: 19px;;
+  right: 16.5px;;
   border-radius: 5px 0 0 0;
 }
 
-.link-list-mobile {
+.mobile-pop-up-menu .link-list-mobile {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.link-list-mobile button {
+.mobile-pop-up-menu .link-list-mobile a {
   width: 180px;
-  margin: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 2px solid variables.$primary_colour;
   background-color: variables.$primary_colour;
   color: variables.$dark_gray;
   text-transform: uppercase;
-  z-index: 3;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.link-list-mobile button:hover {
+.mobile-pop-up-menu .link-list-mobile a:hover {
   background-color: variables.$secondary_colour;
   color: variables.$primary_colour;
-  border: 1px solid variables.$primary_colour;
+  border: 2px solid variables.$primary_colour;
+  cursor: pointer;
 }
 
-.link-list-mobile button:active {
+.mobile-pop-up-menu .link-list-mobile a:active {
   border: 2px solid variables.$secondary_colour;
 }
 
 .mobile-pop-up-menu .socials {
+  display: flex;
   position: relative;
-  top: 15px;
+  top: 8px;
+  margin: 0;
 }
 
-.mobile-pop-up-menu i {
-  color: white;
+.mobile-pop-up-menu .socials i {
+  color: variables.$primary_colour;
+  cursor: pointer;
+
+}
+
+.mobile-pop-up-menu .socials i:hover {
+  background-color: variables.$primary_colour;
+  color: variables.$secondary_colour
+}
+
+@keyframes pop-up-menu {
+  0%{
+    transform: translate3d(99px,-190px,0) scale(9%, 3%);
+    z-index: 1;
+  }
+  40%{
+    transform: translate3d(99px,-150px,0) scale(9%, 7%);
+    z-index: 1;
+  }
+  100%{
+    transform: translate3d(0,0,0) scale(100%);
+    z-index: 2;
+  }
+}
+
+@keyframes pop-down-menu {
+  0%{
+    transform: translate3d(0,0,0) scale(100%);
+    z-index: 2;
+  }
+  60%{
+    transform: translate3d(99px,-150px,0) scale(9%, 7%);
+    z-index: 1;
+  }
+  100%{
+    transform: translate3d(99px,-190px,0) scale(9%, 3%);
+    z-index: 1;
+  }
 }
