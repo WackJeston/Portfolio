@@ -29,6 +29,7 @@
   font-size: 18px;
   font-weight: 500;
   margin: 25px 0 0 0;
+  padding: 0 10px;
 }
 
 .get-in-touch-section .phone-num {
@@ -109,9 +110,12 @@
   border-radius: 5px;
   text-align: center;
   display: none;
-  padding: 0 15px;
   margin-bottom: 20px;
   height: 150px;
+}
+
+.get-in-touch-section .thank-you h2 {
+  max-width: 90%;
 }
 
 // Keyframes

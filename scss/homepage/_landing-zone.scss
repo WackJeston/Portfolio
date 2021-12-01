@@ -45,39 +45,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto;
-  position: relative;
-  top: 15px;
-}
-
-.landing-screen .scroll-down a {
-  padding: 7px 10px 25px 10px;
+  margin: auto 20px 20px 20px;
+  color: variables.$primary_colour;
+  text-decoration: none;
+  font-size: 16px;
   border-radius: 5px;
+  padding: 0 15px;
 }
 
-.landing-screen .scroll-down:hover a {
+.landing-screen .scroll-down:hover {
   background-color: variables.$primary_colour;
 }
 
-.landing-screen .scroll-down i {
-  position: relative;
-  bottom: 30px;
-}
-
-.landing-screen .scroll-down a,
+.landing-screen .scroll-down p,
 .landing-screen .scroll-down i  {
-  color: variables.$primary_colour;
-  text-decoration: none;
-  margin-bottom: 10px;
-  font-size: 16px;
+  margin: none;
+  padding: none;
+  position: relative;
+  bottom: 4px;
 }
 
-.landing-screen .scroll-down:hover a,
+.landing-screen .scroll-down i {
+  bottom: 12px;
+}
+
+.landing-screen .scroll-down:hover p,
 .landing-screen .scroll-down:hover i  {
   color: variables.$secondary_colour;
 }
-
-
 
 
 //--------------------------------------
