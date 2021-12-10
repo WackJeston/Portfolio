@@ -15,13 +15,18 @@
 .coding-examples .example-container {
   display: flex;
   flex-direction: row;
-  margin: 40px 0 0 0;
+  margin: 40px 20px 0 20px;
   width: 100%;
   max-width: 800px;
   background-color: variables.$dark_gray;
   color: variables.$primary_colour;
   border-radius: 10px;
   box-shadow: 0 0 0.4rem 0.1rem rgba(0,0,0,0.2);
+}
+
+ .example-container .main-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .example-container h3 {
@@ -50,6 +55,40 @@
   display: flex;
   width: 100%;
   cursor: pointer;
+}
+
+.example-container .example-link-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 20px 20px 20px;
+}
+
+.example-container .example-link-section a {
+  padding: 7px 12px;
+  background-color: variables.$primary_colour;
+  color: variables.$dark_gray;
+  border-radius: 3px;
+  border: 1px solid variables.$primary_colour;
+  text-decoration: none;
+}
+
+.example-container .example-link-section a:hover {
+  background-color: variables.$secondary_colour;
+  color: variables.$primary_colour;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+
+.example-container .example-link-section a:active {
+  border: 1px solid white;
+}
+
+.example-container .example-link-section i {
+  margin-left: 10px;
+}
+
+.example-container .example-link-section .example-site {
+  margin-bottom: 10px;
 }
 
 .coding-examples .overlay {
@@ -93,6 +132,11 @@
 
   .example-container .mobile-img {
     display: none;
+  }
+
+  .example-container .example-link-section {
+    align-items: center;
+    margin-top: auto;
   }
 }
 
