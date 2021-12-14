@@ -5,11 +5,10 @@
 
 .coding-examples {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 0 0 0;
+  padding: 40px 20px 0 20px;
 }
 
 .coding-examples .example-container {
@@ -132,11 +131,6 @@
 
   .example-container .mobile-img {
     display: none;
-  }
-
-  .example-container .example-link-section {
-    align-items: center;
-    margin-top: auto;
   }
 }
 

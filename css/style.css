@@ -729,13 +729,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   background-color: #35382d;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  margin: 20px 0;
 }
 
 .get-in-touch-section {
@@ -747,25 +745,26 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #f1eedb;
-  margin: 20px;
   max-width: 90%;
 }
 
 .get-in-touch-section .git-info {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
+.get-in-touch-section .git-info a,
 .get-in-touch-section .git-info h3 {
+  font-family: "Cinzel";
   font-size: 18px;
   font-weight: 500;
   margin: 25px 0 0 0;
   padding: 0 10px;
+  color: #f1eedb;
+  text-decoration: none;
 }
 
-.get-in-touch-section .phone-num {
-  position: relative;
-  line-height: 0;
-  top: 5px;
+.get-in-touch-section .git-info a:hover {
+  text-decoration: underline;
 }
 
 .get-in-touch-section .git-info p {
@@ -833,6 +832,7 @@ footer {
   border: 1px solid white;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
           box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  z-index: 2;
 }
 
 .get-in-touch-section .submit:hover {
@@ -845,10 +845,8 @@ footer {
   border: 1px solid #264229;
 }
 
-.get-in-touch-section .thank-you {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.contact-container .thank-you {
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -863,70 +861,41 @@ footer {
   color: #35382d;
   border-radius: 5px;
   text-align: center;
-  display: none;
-  margin-bottom: 20px;
   height: 150px;
+  margin: 0 25px;
 }
 
-.get-in-touch-section .thank-you h2 {
+.contact-container .thank-you h2 {
   max-width: 90%;
 }
 
-@-webkit-keyframes form-exit {
+@-webkit-keyframes thank-you-enter {
   0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 100px, 0) scaleY(20%) scaleX(80%);
+            transform: translate3d(0, 100px, 0) scaleY(20%) scaleX(80%);
   }
-  5% {
-    -webkit-transform: translate3d(-2vh, 0, 0);
-            transform: translate3d(-2vh, 0, 0);
+  40% {
+    -webkit-transform: translate3d(0, 70px, 0) scaleY(20%) scaleX(80%);
+            transform: translate3d(0, 70px, 0) scaleY(20%) scaleX(80%);
   }
   100% {
-    -webkit-transform: translate3d(90vh, 0, 0);
-            transform: translate3d(90vh, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0) scaleY(100%) scaleX(100%);
+            transform: translate3d(0, 0, 0) scaleY(100%) scaleX(100%);
   }
 }
 
-@keyframes form-exit {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  5% {
-    -webkit-transform: translate3d(-2vh, 0, 0);
-            transform: translate3d(-2vh, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(90vh, 0, 0);
-            transform: translate3d(90vh, 0, 0);
-  }
-}
-@-webkit-keyframes thank-you-enter {
-  0% {
-    -webkit-transform: translate3d(90vh, 0, 0);
-            transform: translate3d(90vh, 0, 0);
-  }
-  95% {
-    -webkit-transform: translate3d(-3vh, 0, 0);
-            transform: translate3d(-3vh, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
 @keyframes thank-you-enter {
   0% {
-    -webkit-transform: translate3d(90vh, 0, 0);
-            transform: translate3d(90vh, 0, 0);
+    -webkit-transform: translate3d(0, 100px, 0) scaleY(20%) scaleX(80%);
+            transform: translate3d(0, 100px, 0) scaleY(20%) scaleX(80%);
   }
-  95% {
-    -webkit-transform: translate3d(-3vh, 0, 0);
-            transform: translate3d(-3vh, 0, 0);
+  40% {
+    -webkit-transform: translate3d(0, 70px, 0) scaleY(20%) scaleX(80%);
+            transform: translate3d(0, 70px, 0) scaleY(20%) scaleX(80%);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0) scaleY(100%) scaleX(100%);
+            transform: translate3d(0, 0, 0) scaleY(100%) scaleX(100%);
   }
 }
 @media (max-width: 767px) {
@@ -952,7 +921,9 @@ footer {
 
   .get-in-touch-section .git-info {
     max-width: 500px;
-    margin-right: 30px;
+    margin: 20px 30px 20px 10px;
+    position: relative;
+    bottom: 30px;
   }
 
   .get-in-touch-section .git-form {
@@ -974,19 +945,17 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px 0 0 0;
+  padding: 40px 20px 0 20px;
 }
 
 .coding-examples .example-container {
@@ -1136,13 +1105,6 @@ footer {
 
   .example-container .mobile-img {
     display: none;
-  }
-
-  .example-container .example-link-section {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: auto;
   }
 }
 @media (min-width: 1150px) {
@@ -1363,6 +1325,21 @@ footer {
 
 .scs-main .section-2 h2, .scs-main .section-3 h2 {
   margin: 30px 0 0 0;
+}
+
+.scs-main .treehouse-link {
+  color: #f1eedb;
+  background-color: #35382d;
+  border: 1px solid #35382d;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 500px;
+}
+
+.scs-main .treehouse-link:hover {
+  background-color: #f1eedb;
+  color: #35382d;
 }
 
 .scs-main img {

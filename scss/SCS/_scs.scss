@@ -49,6 +49,21 @@
   margin: 30px 0 0 0;
 }
 
+.scs-main .treehouse-link {
+  color: variables.$primary_colour;
+  background-color: variables.$dark_gray;
+  border: 1px solid variables.$dark_gray;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 500px;
+}
+
+.scs-main .treehouse-link:hover {
+  background-color: variables.$primary_colour;
+  color: variables.$dark_gray;
+}
+
 .scs-main img {
   width: 100%;
   min-width: 50px;
