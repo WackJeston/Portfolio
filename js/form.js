@@ -32,7 +32,7 @@ submit.addEventListener("click", function(){
     zoneGrow = true
     window.location.href = "#contact"
     zoneSize()
-    thanks.style.animation = "thank-you-enter 0.6s forwards"
+    thanks.style.animation = "thank-you-enter 0.4s forwards"
     thanks.style.display = "flex"
   }
 })
