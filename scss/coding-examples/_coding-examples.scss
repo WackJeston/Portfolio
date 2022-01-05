@@ -25,6 +25,7 @@
 
  .example-container .main-content {
   display: flex;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -42,6 +43,20 @@
   margin-bottom: 7px;
 }
 
+.example-container table {
+  margin: 0 20px 20px 20px;
+  font-size: 11px;
+  background-color: variables.$primary_colour;
+  border-radius: 3px;
+}
+
+.example-container table td, .example-container table th {
+  background-color: variables.$dark_gray;
+  height: 35px;
+  padding: 0 4px;
+  text-align: left;
+}
+
 .example-container .desktop-img {
   display: none;
   min-width: 500px;
@@ -52,7 +67,8 @@
 
 .example-container .mobile-img {
   display: flex;
-  width: 100%;
+  max-width: 100%;
+  min-width: 100px;
   cursor: pointer;
 }
 
@@ -119,7 +135,29 @@
   margin: 60px 0;
 }
 
+.example-container .sql-image-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.example-container .desk-db {
+  border-radius: 10px 0 0 0;
+}
+
+.example-container .desk-query {
+  border-radius: 0 0 0 10px;
+}
+
 // Media Quiries ------------------------------------
+@media (max-width:432px) {
+  .example-container table {
+    font-size: 6px;
+  }
+}
+
 @media (min-width:992px) {
   .coding-examples {
     padding-top: 0;
@@ -131,6 +169,10 @@
 
   .example-container .mobile-img {
     display: none;
+  }
+
+  .example-container table {
+    font-size: 7px;
   }
 }
 
@@ -153,5 +195,9 @@
   .example-container .desktop-img {
     min-width: 750px;
     width: 750px;
+  }
+
+  .example-container table {
+    font-size: 9px;
   }
 }

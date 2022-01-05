@@ -79,7 +79,7 @@
         <div class="main-content">
           <h3>Image Generator</h3>
           <p class="brief">This code uses an API called Picsum to access random images and create sectioned lists.</p>
-          <img src="img/example-1.jpg" alt="Coding Example 0" class="mobile-img mobile-0">
+          <img src="img/example-0.jpg" alt="Coding Example 0" class="mobile-img mobile-0">
           <p class="description">In a separate file, I used Axios and the math constructor to access the API and select a random image.
             <br>In this document, I then used the data to create multiple variables and display the random Image. Using if statements and an array of used emails, my function is able to work out if an email has been used before, and then either create a new section or add an image to an existing one.
             <br>The following function decides how large the section containing the list of images should be. It works this out depending on how many sections there are.
@@ -92,11 +92,121 @@
       </div>
 
       <div class="example-container">
-        <img src="img/example-1.jpg" alt="Coding Example 1" class="desktop-img desk-1">
+        <div class="sql-image-box">
+          <img src="img/example-1.jpg" alt="Coding Example 1 Database" class="desktop-img desk-db desk-1">
+          <img src="img/example-1.2.jpg" alt="Coding Example 1 Query" class="desktop-img desk-query desk-1-1">
+        </div>
+        <div class="main-content">
+          <h3>SQL Queries</h3>
+          <p class="brief">This is a query I wrote for an example database filled with movies and their relevant data.</p>
+          <img src="img/example-1.jpg" alt="Coding Example 1" class="mobile-img mobile-db mobile-1">
+          <img src="img/example-1.1.jpg" alt="Coding Example 1" class="mobile-img mobile-query mobile-1-1">
+          <p class="description">The query I wrote returns all movies without null values, in the order of highest rated to lowest rated.
+            <br>In the SELECT portion of the query, I selected all my columns using aliases for their names and tables. I used the ROUND() function to limit the average rating to one decimal place, and the CONCAT() function to combine the first and last names of the directors and actors.
+            <br>I used a subquery to select the main actor for each movie to demonstrate another method.
+            <br>In the FROM portion of the query, I used the INNER JOIN method to link and add aliases to my tables.
+            <br>In the WHERE section, I used IS NOT NULL to remove any rows containing empty values.
+            <br>Finally in the ORDER BY section I ordered my rows by average rating, starting from the highest.
+          </p>
+          <table>
+            <tr>
+              <th>Title</th>
+              <th>Average Rating</th>
+              <th>Review Count</th>
+              <th>Genre</th>
+              <th>Director</th>
+              <th>Main Actor</th>
+            </tr>
+            <tr>
+              <td>The Usual Suspects</td>
+              <td>8.6</td>
+              <td>779489</td>
+              <td>Crime</td>
+              <td>Bryan Singer</td>
+              <td>Stephen Baldwin</td>
+            </tr>
+            <tr>
+              <td>Vertigo</td>
+              <td>8.4</td>
+              <td>263575</td>
+              <td>Mystery</td>
+              <td>Alfred Hitchcock</td>
+              <td>James Stewart</td>
+            </tr>
+            <tr>
+              <td>Aliens</td>
+              <td>8.4</td>
+              <td>511613</td>
+              <td>Action</td>
+              <td>James Cameron</td>
+              <td>Sigourney Weaver</td>
+            </tr>
+            <tr>
+              <td>Lawrence of Arabia</td>
+              <td>8.3</td>
+              <td>202778</td>
+              <td>Adventure</td>
+              <td>David Lean</td>
+              <td>Peter OToole</td>
+            </tr>
+            <tr>
+              <td>Blade Runner</td>
+              <td>8.2</td>
+              <td>484746</td>
+              <td>Thriller</td>
+              <td>Ridley Scott</td>
+              <td>Harrison Ford</td>
+            </tr>
+            <tr>
+              <td>Annie Hall</td>
+              <td>8.1</td>
+              <td>203875</td>
+              <td>Comedy</td>
+              <td>Woody Allen</td>
+              <td>Woody Allen</td>
+            </tr>
+            <tr>
+              <td>Slumdog Millionaire</td>
+              <td>8.0</td>
+              <td>667758</td>
+              <td>Drama</td>
+              <td>Danny Boyle</td>
+              <td>Dev Patel</td>
+            </tr>
+            <tr>
+              <td>The Innocents</td>
+              <td>7.9</td>
+              <td>20207</td>
+              <td>Horror</td>
+              <td>Jack Clayton</td>
+              <td>Deborah Kerr</td>
+            </tr>
+            <tr>
+              <td>American Beauty	</td>
+              <td>7.0</td>
+              <td>862618</td>
+              <td>Romance</td>
+              <td>Sam Mendes</td>
+              <td>Kevin Spacey</td>
+            </tr>
+            <tr>
+              <td>Beyond the Sea</td>
+              <td>6.7</td>
+              <td>13091</td>
+              <td>Music</td>
+              <td>Kevin Spacey</td>
+              <td>Kevin Spacey</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="example-container">
+        <img src="img/example-2.jpg" alt="Coding Example 2" class="desktop-img desk-2">
         <div class="main-content">
           <h3>Portfolio Menu</h3>
           <p class="brief">This is the code I wrote to control the pop-up menu used in the mobile layout of this site.</p>
-          <img src="img/example-1.jpg" alt="Coding Example 1" class="mobile-img mobile-1">
+          <img src="img/example-2.jpg" alt="Coding Example 2" class="mobile-img mobile-2">
           <p class="description">I used CSS Keyframes to create animations for the menu appearing and disappearing.
             <br>By using a combination of if statements and click events I made three functions. One to control the menu opening and closing when the button is clicked. Another to close the menu if anything else is clicked. And the last function used the resize event to close the menu if the window grows too wide for mobiles.
             <br>All of these functions use the setTimeout function to wait for the keyframe animations to complete before moving on.
@@ -108,11 +218,11 @@
       </div>
 
       <div class="example-container">
-        <img src="img/example-2.jpg" alt="Coding Example 1" class="desktop-img desk-2">
+        <img src="img/example-3.jpg" alt="Coding Example 3" class="desktop-img desk-3">
         <div class="main-content">
           <h3>API Site Building</h3>
           <p class="brief">I was given an API and asked to create a website from the content hosted within the API.</p>
-          <img src="img/example-2.jpg" alt="Coding Example 1" class="mobile-img mobile-2">
+          <img src="img/example-3.jpg" alt="Coding Example 3" class="mobile-img mobile-3">
           <p class="description">While taking part in a coding challenge I was tasked with creating a website using the content hosted on an API.
             <br>I used an Axios function to access the API, and within the function, I called several other functions to implement each piece of data into the page.
             <br>Being the first time I had used an API I struggled accessing the API at first, but once I got the hang of it I was quickly able to complete the challenge.
@@ -125,11 +235,11 @@
       </div>
 
       <div class="example-container">
-        <img src="img/example-3.jpg" alt="Coding Example 1" class="desktop-img desk-3">
+        <img src="img/example-4.jpg" alt="Coding Example 4" class="desktop-img desk-4">
         <div class="main-content">
           <h3>Form Validation</h3>
           <p class="brief">This is the code I wrote to handle the form validation and animation for this site.</p>
-          <img src="img/example-3.jpg" alt="Coding Example 1" class="mobile-img mobile-3">
+          <img src="img/example-4.jpg" alt="Coding Example 4" class="mobile-img mobile-4">
           <p class="description">I created individual functions to validate each of my inputs. Then I used a click event to check all my validations are correct. If they are all correct, a keyframe is run to allow the form to smoothly exit and be replaced by a thank you message.
             <br>I also created a function to control the size of the form zone depending on the window size, and whether the form has been completed or not. This is run when the page is loaded and every time the window is resized.
           </p>

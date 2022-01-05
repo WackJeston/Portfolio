@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-p, button, input, a, textarea {
+p, button, input, a, textarea, table {
   font-family: "Raleway", sans-serif;
 }
 
@@ -980,6 +980,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1000,6 +1001,20 @@ footer {
   margin-bottom: 7px;
 }
 
+.example-container table {
+  margin: 0 20px 20px 20px;
+  font-size: 11px;
+  background-color: #f1eedb;
+  border-radius: 3px;
+}
+
+.example-container table td, .example-container table th {
+  background-color: #35382d;
+  height: 35px;
+  padding: 0 4px;
+  text-align: left;
+}
+
 .example-container .desktop-img {
   display: none;
   min-width: 500px;
@@ -1012,7 +1027,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  max-width: 100%;
+  min-width: 100px;
   cursor: pointer;
 }
 
@@ -1092,6 +1108,34 @@ footer {
   margin: 60px 0;
 }
 
+.example-container .sql-image-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.example-container .desk-db {
+  border-radius: 10px 0 0 0;
+}
+
+.example-container .desk-query {
+  border-radius: 0 0 0 10px;
+}
+
+@media (max-width: 432px) {
+  .example-container table {
+    font-size: 6px;
+  }
+}
 @media (min-width: 992px) {
   .coding-examples {
     padding-top: 0;
@@ -1105,6 +1149,10 @@ footer {
 
   .example-container .mobile-img {
     display: none;
+  }
+
+  .example-container table {
+    font-size: 7px;
   }
 }
 @media (min-width: 1150px) {
@@ -1125,6 +1173,10 @@ footer {
   .example-container .desktop-img {
     min-width: 750px;
     width: 750px;
+  }
+
+  .example-container table {
+    font-size: 9px;
   }
 }
 .about-me-main {
